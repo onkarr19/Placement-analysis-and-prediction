@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict for a Student</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body style="background-color:blanchedalmond"><br>
+    <h2 style="text-align: center">Please enter grades to get the placement prediction</h2>
+    <br><br>
+    <form action="/predict-single/" method="get" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+
+        <label for="your_name"  class="form-label">Operating System     </label>
+        <input name="os_grade" type="number" step="0.1" class="form-control" >
+        <br><br>
+
+        <label for="your_name" class="form-label">Theory Of Computation</label>
+        <input name="toc_grade" type="number" step="0.1" class="form-control">
+        <br><br>
+
+        <label for="your_name" class="form-label">SGPA Of Semester 5   </label>
+        <input name="sgpa_5" type="number" step="0.1" class="form-control">
+        <br><br>
+
+        <label for="your_name" class="form-label">CGPA Of Semester 6   </label>
+        <input name="cgpa_6" type="number" step="0.1" class="form-control">
+        <br><br>
+
+        <label for="your_name" class="form-label">Computer Graphics    </label>
+        <input name="cg_grade" type="number" step="0.1" class="form-control">
+        <br><br>
+
+        <label for="your_name" class="form-label">Open Elective Name   </label>
+        <label><select name="oe_name" id="oe_name" class="form-control">
+        <option value="aiml">AIML</option>
+        <option value="ds">Data Science</option>
+        <option value="cyber">Cyber Security</option>
+        </select>
+            </label>
+        <br><br>
+
+        <label for="your_name" class="form-label">Open Elective        </label>
+        <input name="oe_grade" type="number" step="0.1" class="form-control">
+        <br><br>
+
+        <label for="your_name" class="form-label">Compiler Design      </label>
+        <input name="cd_grade" type="number" step="0.1" class="form-control">
+        <br><br>
+
+        <label for="your_name" class="form-label">COA                  </label>
+        <input name="coa_grade" type="number" step="0.1" class="form-control">
+        <br><br>
+
+
+
+
+    <input type="submit" value="Predict" class="col-12" style="padding-right: 30px; background-color: aqua;font-family: Arial">
+</form>
+</body>
+</html>
